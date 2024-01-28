@@ -31,10 +31,10 @@ class _DirectionChipWidgetsState extends State<DirectionChipWidgets> {
               });
             },
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
                   color: (isSelected)
-                      ? Constants.accentColour1
+                      ? Constants.accentColour3
                       : Colors.transparent,
                   borderRadius: BorderRadius.circular(10)),
               child: Text(

@@ -10,7 +10,7 @@ class CartList extends StatelessWidget {
       child: ListView.builder(
           itemCount: 3,
           itemBuilder: (context, index) {
-            return CartListitem();
+            return const CartListitem();
           }),
     );
   }
@@ -37,7 +37,7 @@ class CartListitem extends StatelessWidget {
                 width: 60,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 20,
             ),
             Column(
@@ -51,7 +51,7 @@ class CartListitem extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 16),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
@@ -61,7 +61,7 @@ class CartListitem extends StatelessWidget {
                       fontSize: 14,
                       letterSpacing: 0.5),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 const Text(
@@ -74,7 +74,7 @@ class CartListitem extends StatelessWidget {
                 ),
               ],
             ),
-            Expanded(
+            const Expanded(
               child: SizedBox(),
             ),
             Align(
@@ -82,30 +82,30 @@ class CartListitem extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                      padding: EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
                           color: Constants.accentColour2,
                           borderRadius: BorderRadius.circular(10)),
-                      child: Icon(
+                      child: const Icon(
                         Icons.add,
                         size: 8,
                       )),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
-                  Text(
+                  const Text(
                     "4",
                     style: TextStyle(fontSize: 18),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Container(
-                      padding: EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
                           color: Constants.accentColour2,
                           borderRadius: BorderRadius.circular(10)),
-                      child: Icon(
+                      child: const Icon(
                         Icons.remove,
                         size: 8,
                       )),

@@ -31,7 +31,7 @@ class HorizontalItemWidget extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (_) => DetailScreen()));
+            context, MaterialPageRoute(builder: (_) => const DetailScreen()));
       },
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 15),
@@ -45,25 +45,36 @@ class HorizontalItemWidget extends StatelessWidget {
               height: 150,
               width: 150,
             ),
+            const SizedBox(
+              height: 20,
+            ),
             const Text(
               "Scarlet Whitening",
               style: TextStyle(
+                  letterSpacing: 0.2,
                   color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500),
-            ),
-            const Text(
-              "Brightly Serum",
-              style: TextStyle(
-                  color: Colors.grey,
                   fontSize: 15,
                   fontWeight: FontWeight.w500),
             ),
+            const SizedBox(
+              height: 5,
+            ),
+            Text(
+              "Brightly Serum",
+              style: TextStyle(
+                  letterSpacing: 0.2,
+                  color: Colors.grey.shade400,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w500),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
             const Text(
-              "\$10.0",
+              "\$10.33",
               style: TextStyle(
                   color: Colors.black,
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.w500),
             )
           ],

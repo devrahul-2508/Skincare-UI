@@ -36,7 +36,7 @@ class _QuantityChipWidgetsState extends State<QuantityChipWidgets> {
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
               decoration: BoxDecoration(
                   color: (isSelected)
-                      ? Constants.accentColour1
+                      ? Constants.accentColour1.withOpacity(0.3)
                       : Colors.grey.shade200,
                   borderRadius: BorderRadius.circular(10)),
               child: Center(
@@ -44,7 +44,9 @@ class _QuantityChipWidgetsState extends State<QuantityChipWidgets> {
                   quantity,
                   style: TextStyle(
                       fontSize: 14,
-                      color: (isSelected) ? Colors.white : Colors.grey),
+                      fontWeight: FontWeight.w500,
+                      color:
+                          (isSelected) ? Constants.accentColour1 : Colors.grey),
                 ),
               ),
             ),
