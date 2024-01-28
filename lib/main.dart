@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skin_care_application/screens/main_screen.dart';
+import 'package:skin_care_application/utlis/constants.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: ColorScheme.fromSeed(seedColor: Constants.accentColour3),
           useMaterial3: false,
         ),
         home: const MainScreen());

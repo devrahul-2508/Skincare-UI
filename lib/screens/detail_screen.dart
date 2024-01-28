@@ -14,17 +14,17 @@ class DetailScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
           body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding:
-                        const EdgeInsets.only(left: 10, top: 8, bottom: 8, right: 5),
+                    padding: const EdgeInsets.only(
+                        left: 10, top: 8, bottom: 8, right: 5),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: Constants.accentColour1)),
@@ -100,10 +100,20 @@ class DetailScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const Text(
-              "Illuminate your skin with our advanced skin whitening cream, crafted with potent ingredients to reduce dark spots and uneven tones.",
-              style: TextStyle(height: 1.8, color: Colors.grey, fontSize: 14),
-            ),
+            RichText(
+                text: TextSpan(children: [
+              TextSpan(
+                text:
+                    "Illuminate your skin with our advanced skin whitening cream, crafted with potent ingredients to reduce dark spots and uneven tones.",
+                style: TextStyle(height: 1.8, color: Colors.grey, fontSize: 14),
+              ),
+              TextSpan(
+                  text: "See More",
+                  style: TextStyle(
+                      color: Constants.accentColour3,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold))
+            ])),
             const SizedBox(
               height: 15,
             ),
