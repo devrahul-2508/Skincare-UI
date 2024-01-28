@@ -43,7 +43,7 @@ class _QuantityChipWidgetsState extends State<QuantityChipWidgets> {
                 child: Text(
                   quantity,
                   style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 14,
                       color: (isSelected) ? Colors.white : Colors.grey),
                 ),
               ),
